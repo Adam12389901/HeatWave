@@ -15,7 +15,14 @@ public class WeatherData {
     }
 
     public int longestHeatWave(double threshold) {
+        int consecutive = 0;
+        int counter= 0;
+        for(int i = 0; i < temperatures.size(); i++){
+            if (temperatures.get(i) > threshold){
+                counter++;
 
+            }
+        }
     }
 
     public static void main(String[] args) {
