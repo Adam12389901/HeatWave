@@ -26,6 +26,9 @@ public class WeatherData {
                 counter++;
 
             }
+            else{
+                break;
+            }
         }
         if (counter > consecutive){
             consecutive = counter;
@@ -42,11 +45,11 @@ public class WeatherData {
         temperatures.add(101.0);
         temperatures.add(102.5);
         WeatherData weatherData = new WeatherData();
-
-        WeatherData.cleanData(85.0,120.0);
-        for (int i = 0; i < temperatures.size(); i++){
+        weatherData.cleanData(85.0, 120.0);
+        for(int i = 0; i < temperatures.size(); i++){
             System.out.println(temperatures.get(i));
         }
+
     }
 
 
