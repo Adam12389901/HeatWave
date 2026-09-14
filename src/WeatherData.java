@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class WeatherData {
 
-    private ArrayList<Double> temperatures;
+    private static ArrayList<Double> temperatures;
 
 
     public void cleanData(double lower, double upper) {
@@ -23,7 +23,6 @@ public class WeatherData {
 
             }
         }
-
         if (counter > consecutive){
             consecutive = counter;
         }
@@ -31,7 +30,12 @@ public class WeatherData {
     }
 
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        temperatures.add(100.7);
+        temperatures.add(120.6);
+        temperatures.add(120.7);
+        temperatures.add(120.6);
+        temperatures.add(120.7);
+        System.out.println(temperatures.get(0));
     }
 
 
