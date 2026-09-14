@@ -1,6 +1,8 @@
+import java.util.ArrayList;
+
 public class WeatherData {
 
-     private ArrayList<Double> temperatures;
+    private ArrayList<Double> temperatures;
 
 
     public void cleanData(double lower, double upper) {
