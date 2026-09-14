@@ -23,6 +23,11 @@ public class WeatherData {
 
             }
         }
+
+        if (counter > consecutive){
+            consecutive = counter;
+        }
+        return consecutive;
     }
 
     public static void main(String[] args) {
